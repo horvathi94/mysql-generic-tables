@@ -1,18 +1,3 @@
-/*
-
------ Basic table -----
-
-
-Stores a list of VARCHAR values.
-
-Table structure: | id | label | indx |
-Columns:
-  - id:			INT UNSIGNED -> PRIMARY KEY
-  - label:	VARCHAR(200) -> holds data
-  - indx:		INT UNSIGNED -> order of the rows, if 0 the row is hidden in view.
-
-	
- */
 
 DELIMITER $
 CREATE PROCEDURE create_basic_table(
