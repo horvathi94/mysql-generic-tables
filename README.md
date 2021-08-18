@@ -6,7 +6,7 @@ Generic tables that I like to use when creating new MySQL projects.
 
 ### 1. Basic table: 
 
-Stores a list of ordered VARCHAR(200) values. The sorting order is determined by the `indx` column, if this column is 0 the value will be hidden in the view.
+Stores a list of ordered VARCHAR(200) values. The sorting order is determined by the **indx** column, if this column is 0 the value will be hidden in the view.
 
 #### Table structure:
  id | label | indx 
@@ -55,9 +55,9 @@ Create view of an ordereddict table.
 
 - `upsert_ordereddict_table`
 Insert or update data in an ordereddict table.
-If the IN id is not 0, then updates row with that `id`.
-If the IN id is 0 and then updates the row where `item_key` is the same as the IN item_key.
-If the IN id is 0 and the IN item_key is not found in the table, then a row with `indx` 0 is updated with the IN data, if no such row is found then a new row is inserted.
+If the **IN id** is not 0, then updates row with that **id**.
+If the **IN id** is 0 and then updates the row where **item_key** is the same as the **IN item_key**.
+If the **IN id** is 0 and the **IN item_key** is not found in the table, then a row with **indx** 0 is updated with the IN data, if no such row is found then a new row is inserted.
   - **table_name**, IN VARCHAR(100): the table to be updated
   - **id**, IN INT UNSIGNED: the id of the row to be updated
   - **item_key**, IN VARCHAR(200): the item_key of the item to be added or updated
