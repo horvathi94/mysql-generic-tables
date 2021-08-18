@@ -11,7 +11,8 @@ Stores a list of ordered VARCHAR(200) values. The sorting order is determined by
 **Table structure:** 
  id | label | indx 
 ----|-------|------
-INT UNSIGNED | VARCHAR(200) | INT UNSIGNED |
+INT UNSIGNED | VARCHAR(200) | INT UNSIGNED 
+PK | Saved labels | Order of the rows 
 
 **Columns:**
 - `id`: 		INT UNSIGNED -> PRIMARY KEY
